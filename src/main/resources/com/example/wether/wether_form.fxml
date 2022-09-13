@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="362.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wether.Controller">
+   <children>
+      <AnchorPane layoutX="9.0" layoutY="7.0" prefHeight="69.0" prefWidth="345.0">
+         <children>
+            <Text fill="WHITE" layoutX="91.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Погодник">
+               <font>
+                  <Font name="Myanmar Text Bold" size="33.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="city" layoutX="53.0" layoutY="95.0" promptText="Введите город">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="getData" layoutX="98.0" layoutY="156.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="150.0" text="Узнать погоду" textFill="#000000b8">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Text fx:id="temp_info" fill="WHITE" layoutX="30.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Температура:">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_feel" fill="WHITE" layoutX="30.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ощущается:">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_max" fill="WHITE" layoutX="30.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Максимум:">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_min" fill="WHITE" layoutX="30.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Минимум:">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_press" fill="WHITE" layoutX="30.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Давление:">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
